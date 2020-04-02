@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:foregroundGravity="clip_horizontal"
+        app:cardBackgroundColor="#f12711"
+        app:layout_anchorGravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/ihs_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:foregroundGravity="clip_horizontal"
+            app:srcCompat="@drawable/ihs_logo" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="918px"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/profile_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="84dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/profile" />
+
+            <Button
+                android:id="@+id/profile_button"
+                android:layout_width="810px"
+                android:layout_height="250px"
+                android:background="@android:color/white"
+                android:text="Profile"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="918px"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/contact_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="82dp"
+                android:layout_marginTop="15px"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/contact" />
+
+            <Button
+                android:id="@+id/contact_button"
+                android:layout_width="810px"
+                android:layout_height="wrap_content"
+                android:height="250px"
+                android:background="@android:color/white"
+                android:text="Contact"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="918px"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/payment_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="79dp"
+                android:layout_marginTop="20px"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/payment" />
+
+            <Button
+                android:id="@+id/payment_button"
+                android:layout_width="810px"
+                android:layout_height="wrap_content"
+                android:height="250px"
+                android:background="@android:color/white"
+                android:text="Payment"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="918px"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/notifications_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="82dp"
+                android:layout_marginTop="15px"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/notifications" />
+
+            <Button
+                android:id="@+id/notifications_button"
+                android:layout_width="810px"
+                android:layout_height="wrap_content"
+                android:height="250px"
+                android:background="@android:color/white"
+                android:text="Notifications"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="918px"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/exit_button"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="150px"
+        android:background="@drawable/button_background"
+        android:padding="0dp"
+        android:paddingTop="0dp"
+        android:shadowColor="#00FFFFFF"
+        android:text="Exit"
+        android:textColor="#FDFFFF"
+        android:textColorHighlight="#F8F5F5"
+        android:textColorHint="#ECE3E3"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
